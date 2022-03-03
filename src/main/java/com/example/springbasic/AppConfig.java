@@ -5,7 +5,7 @@ import com.example.springbasic.discount.RateDiscountPolicy;
 import com.example.springbasic.member.MemberRepository;
 import com.example.springbasic.member.MemberService;
 import com.example.springbasic.member.MemberServiceImpl;
-import com.example.springbasic.member.MemoryMemberRepiository;
+import com.example.springbasic.member.MemoryMemberRepository;
 import com.example.springbasic.order.OrderService;
 import com.example.springbasic.order.OrderServiceImpl;
 import org.springframework.context.annotation.Bean;
@@ -27,7 +27,7 @@ public class AppConfig {
     @Bean
     public MemberRepository memberRepository() {
         System.out.println("call AppConfig.memberRepository");
-        return new MemoryMemberRepiository();
+        return new MemoryMemberRepository();
     }
 
     @Bean

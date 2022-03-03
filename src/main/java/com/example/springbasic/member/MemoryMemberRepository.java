@@ -6,8 +6,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-@Component
-public class MemoryMemberRepiository implements MemberRepository{
+@Component  //memoryMemberRepository
+public class MemoryMemberRepository implements MemberRepository{
 
     // TODO ConcurrentHashMap 확인
     // 실무에서는 동시성 이슈때문에 ConcurrentHashMap 쓰임

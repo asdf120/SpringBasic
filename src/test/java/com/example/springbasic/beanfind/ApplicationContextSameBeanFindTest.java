@@ -1,9 +1,7 @@
 package com.example.springbasic.beanfind;
 
-import com.example.springbasic.AppConfig;
-import com.example.springbasic.discount.DiscountPolicy;
 import com.example.springbasic.member.MemberRepository;
-import com.example.springbasic.member.MemoryMemberRepiository;
+import com.example.springbasic.member.MemoryMemberRepository;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -50,12 +48,12 @@ public class ApplicationContextSameBeanFindTest {
 
         @Bean
         public MemberRepository memberRepository1(){
-            return new MemoryMemberRepiository();
+            return new MemoryMemberRepository();
         }
 
         @Bean
         public MemberRepository memberRepository2(){
-            return new MemoryMemberRepiository();
+            return new MemoryMemberRepository();
         }
     }
 }

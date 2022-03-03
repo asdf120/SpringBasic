@@ -8,7 +8,7 @@
         <constructor-arg name="memberRepository" ref="memberRepository"></constructor-arg>
     </bean>
 
-    <bean id="memberRepository" class="com.example.springbasic.member.MemoryMemberRepiository">
+    <bean id="memberRepository" class="com.example.springbasic.member.MemoryMemberRepository">
 
     </bean>
 
