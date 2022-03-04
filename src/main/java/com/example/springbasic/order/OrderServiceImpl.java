@@ -24,11 +24,11 @@ public class OrderServiceImpl implements OrderService {
     }
     
     // 생성자를 통한 의존주입
-//    @Autowired
-//    public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy){
-//        this.memberRepository = memberRepository;
-//        this.discountPolicy = discountPolicy;
-//    }
+    @Autowired
+    public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy){
+        this.memberRepository = memberRepository;
+        this.discountPolicy = discountPolicy;
+    }
 
     // 일반 메소드를 통한 의존주입
 //    @Autowired
