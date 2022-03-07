@@ -1,5 +1,8 @@
 package com.example.springbasic.lifecycle;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 public class NetworkClient{
     
     private String url;
@@ -28,6 +31,7 @@ public class NetworkClient{
     }
 
     //의존 관계주입이 끝나면 호출되는 메소드
+    @PostConstruct
     public void init(){
         System.out.println("NetworkClient.afterPropertiesSet");
         connect();
@@ -35,6 +39,7 @@ public class NetworkClient{
     }
 
     //빈이 종료되면 호출
+    @PreDestroy
     public void close(){
         System.out.println("NetworkClient.destroy");
         disconnect();
